@@ -1,0 +1,20 @@
+-beacons servem de registo.
+
+-pedidos metadados e resposta aos metadados.
+
+-pedidos de chunks e resposta aos chunks.
+
+-definir os pacotes.
+
+-max 64k Bytes em UDP.
+
+-chunks começar com tamanho do MTU (1k ou 1,5k Bytes) e ir aumentando até arredores de 32k para não chegar mt perto de 64k.
+(versao mais simples, definir um número fixo do tamanho para as chunks).
+forma mais dinâmica, fazer como TCP e identificar as chunks através do Byte a ler/último Byte.
+
+-pedir a pelo menos a 2 FastFileSrv com o tamanho de chunk igual.
+
+-socket UDP.
+
+-http server com lista dos servidores disponíveis.
+
